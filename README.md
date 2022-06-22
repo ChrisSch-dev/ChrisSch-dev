@@ -5,9 +5,9 @@
 
 - 🔭 I’m currently working on **EternalGaiua**
 
-- 🌱 I’m currently learning **Python**
+- 🌱 I’m currently learning **Rust**
 
-- 🤝 I’m looking for help with **Python**
+- 🤝 I’m looking for help with **Rust**
 
 - 💬 Ask me about **JS, TS, Java**
 
