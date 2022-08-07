@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=chrissch-dev&label=Profile%20views&color=0e75b6&style=flat" alt="chrissch-dev" /> </p>
 
-- 🔭 I’m currently working on **EternalGaius**
+- 🔭 I’m currently working on **[EternalGaius](https://github.com/EternalGaiusOfficial)**
 
 - 🌱 I’m currently learning **Rust**
 
