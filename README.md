@@ -9,7 +9,7 @@
 
 - 🤝 I’m looking for help with **Rust**
 
-- 💬 Ask me about **JS, TS, Java**
+- 💬 Ask me about **Javascript or Typescript**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
