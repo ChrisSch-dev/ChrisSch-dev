@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm ChrisSch</h1>
-<h3 align="center">A JS, TS Developer from Hong Kong!</h3>
+<h3 align="center">A Back-end Developer from Hong Kong!</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=chrissch-dev&label=Profile%20views&color=0e75b6&style=flat" alt="chrissch-dev" /> </p>
 
