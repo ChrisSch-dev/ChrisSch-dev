@@ -1,5 +1,5 @@
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/2382eba6-833d-486e-ae27-6867763b20f4" alt="banner_img"/> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/1236e4a2-5e9f-4a0e-b91f-526ca9b44c95" alt="banner_img"/> </p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=chrissch-dev&label=Profile%20views&color=0e75b6&style=flat" alt="chrissch-dev" /> </p>
 
