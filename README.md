@@ -10,7 +10,7 @@
 
 - Currently employed as a Software Engineer at a Private Instituion
 
-- Commissions are not accepted at this time period
+- Specializes in Back-end Development 
 
 - Ask me about: Javascript, TypeScript, Kotlin, Rust
 
