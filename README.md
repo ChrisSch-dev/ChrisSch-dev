@@ -6,7 +6,7 @@
 <h3 align="left">Hi 👋, I'm ChrisSch</h3>
 <p align="left">A Software Engineer from Hong Kong!</p>
 
-<br></br>
+<hr></hr>
 
 #### A Little Information About Me
 - Currently working on [Galaxies](https://galaxies-tech.vercel.app) as a Lead Developer
