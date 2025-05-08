@@ -1,7 +1,7 @@
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/2382eba6-833d-486e-ae27-6867763b20f4" alt="banner_img"/> </p>
 
-<h1 align="left">Hi 👋, I'm ChrisSch</h1>
+<h3 align="left">Hi 👋, I'm ChrisSch</h3>
 <p align="left">A Software Engineer from Hong Kong!</p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=chrissch-dev&label=Profile%20views&color=0e75b6&style=flat" alt="chrissch-dev" /> </p>
