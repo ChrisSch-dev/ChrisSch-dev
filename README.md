@@ -1,6 +1,5 @@
 
-<p align="center"> <img src="![image](https://github.com/user-attachments/assets/2382eba6-833d-486e-ae27-6867763b20f4)
-" alt="banner_img"/> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/2382eba6-833d-486e-ae27-6867763b20f4" alt="banner_img"/> </p>
 
 <h1 align="center">Hi 👋, I'm ChrisSch</h1>
 <h3 align="center">A Software Engineer from Hong Kong!</h3>
