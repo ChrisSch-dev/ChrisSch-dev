@@ -13,7 +13,7 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 <hr></hr>
 
 ### A Little Information About Me
-- Currently employed as a Software Engineer at a Private Instituion
+- Currently employed as a Software Engineer
 
 - Specializes in Back-end Development 
 
