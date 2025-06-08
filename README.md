@@ -19,6 +19,8 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 
 - Ask me about: Javascript, TypeScript, Kotlin, Rust, Python
 
+- Currently learning: C and C++
+
 ### Previous Projects/Contributions/Work Experience
 - Former Lead-Developer, System Administrator @ [Galaxies - Epoch Studio](https://github.com/EpochStudio/)
 
