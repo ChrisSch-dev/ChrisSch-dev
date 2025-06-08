@@ -26,6 +26,8 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 
 - Founder @ [Epoch Studio](https://github.com/EpochStudio/)
 
+- Former Developer @ Galaxies (Under Different Ownership) (2021 ~ 2022)
+
 - Former Founder @ EternalGaius (2020 ~ 2024)
 
 - Former Developer @ [Celendi](https://github.com/Celendi) (2021)
