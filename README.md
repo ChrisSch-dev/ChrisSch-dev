@@ -22,19 +22,19 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 - Currently learning: C and C++
 
 ### Previous Projects/Contributions/Work Experience
-- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May)
+- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
 
-- Founder @ [Epoch Studio](https://github.com/EpochStudio/)
+- Founder @ [Epoch Studio](https://github.com/EpochStudio/) [Remote]
 
-- Former Developer @ Galaxies (Under Different Ownership) (2021 ~ 2022)
+- Former Developer @ Galaxies (Under Different Ownership) (2021 ~ 2022) [Remote]
 
-- Former Founder @ EternalGaius (2020 ~ 2024)
+- Former Founder @ EternalGaius (2020 ~ 2024) [Remote]
 
-- Former Developer @ [Celendi](https://github.com/Celendi) (2021)
+- Former Developer @ [Celendi](https://github.com/Celendi) (2021) [Remote]
 
-- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC (2024)
+- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC (2024) [On-site]
 
-- Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord)
+- Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord) [Remote]
 
 ### Skill Set
 
