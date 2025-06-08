@@ -13,13 +13,24 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 <hr></hr>
 
 ### A Little Information About Me
-- Currently working on [Galaxies](https://galaxies-tech.vercel.app) as a Lead Developer
-
 - Currently employed as a Software Engineer at a Private Instituion
 
 - Specializes in Back-end Development 
 
 - Ask me about: Javascript, TypeScript, Kotlin, Rust, Python
+
+### Previous Projects/Contributions/Work Experience
+- Former Lead-Developer, System Administrator @ [Galaxies - Epoch Studio](https://github.com/EpochStudio/)
+
+- Founder @ [Epoch Studio](https://github.com/EpochStudio/)
+
+- Former Founder @ EternalGaius (2020 ~ 2024)
+
+- Former Developer @ [Celendi](https://github.com/Celendi) (2021)
+
+- Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord)
+
+- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC
 
 ### Skill Set
 
