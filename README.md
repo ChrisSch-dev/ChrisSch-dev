@@ -24,7 +24,7 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 ### Previous Projects/Contributions/Work Experience
 - Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
 
-- Founder @ [Epoch Studio](https://github.com/EpochStudio/) [Remote]
+- Former Founder @ [Epoch Studio](https://github.com/EpochStudio/) [Remote]
 
 - Former Developer @ Galaxies (Under Different Ownership) (2021 ~ 2022) [Remote]
 
