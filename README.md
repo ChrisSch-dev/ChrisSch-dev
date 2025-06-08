@@ -22,7 +22,7 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 - Currently learning: C and C++
 
 ### Previous Projects/Contributions/Work Experience
-- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/)
+- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May)
 
 - Founder @ [Epoch Studio](https://github.com/EpochStudio/)
 
@@ -30,9 +30,9 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 
 - Former Developer @ [Celendi](https://github.com/Celendi) (2021)
 
-- Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord)
+- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC (2024)
 
-- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC
+- Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord)
 
 ### Skill Set
 
