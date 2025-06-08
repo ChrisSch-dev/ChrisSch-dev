@@ -22,7 +22,7 @@ I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback a
 - Currently learning: C and C++
 
 ### Previous Projects/Contributions/Work Experience
-- Former Lead-Developer, System Administrator @ [Galaxies - Epoch Studio](https://github.com/EpochStudio/)
+- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/)
 
 - Founder @ [Epoch Studio](https://github.com/EpochStudio/)
 
