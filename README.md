@@ -7,7 +7,6 @@
 <p align="left">
 Hello! I am Chris, a self-taught back-end developer/software engineer from Hong Kong. Currently still in High School, and currently majors in Biology and Computer Science. I specialize in JS, TS, Kotlin and Rust!
 
-I am also the Lead-Developer of Galaxies. If you have any suggestions/feedback about Galaxies, please do send me a DM on discord or if you just want to have a chat, you are also welcomed!
 </p>
 
 <hr></hr>
