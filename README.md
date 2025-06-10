@@ -33,6 +33,8 @@ Hello! I am Chris, a self-taught back-end developer/software engineer from Hong 
 
 - Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC (2024) [On-site]
 
+- Former Maintainer/Contributor @ PrismaCord (2022) [Remote]
+
 - Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord) [Remote]
 
 - Freelancer (2020 ~ 2021), Over 300+ Commissions Received [Remote]
