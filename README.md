@@ -12,7 +12,7 @@ Hello! I am Chris, a self-taught back-end developer/software engineer from Hong 
 <hr></hr>
 
 ### A Little Information About Me
-- Currently employed as a Software Engineer
+- Currently employed as a Software Engineer [Remote]
 
 - Specializes in Back-end Development 
 
