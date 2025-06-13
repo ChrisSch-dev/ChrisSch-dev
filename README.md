@@ -1,7 +1,5 @@
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/1236e4a2-5e9f-4a0e-b91f-526ca9b44c95" alt="banner_img"/> </p>
-
-<h2 align="left">Hi 👋, I'm ChrisSch</h3> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
+<h align="left">Hi 👋, I'm ChrisSch</h> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
 <p align="left">
 Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
 </p>
