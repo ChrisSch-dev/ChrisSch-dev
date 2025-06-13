@@ -3,9 +3,9 @@
 
 <h2 align="left">Hi 👋, I'm ChrisSch</h3> 
 <p align="left">
-Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
-
 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’
+
+Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
 </p>
 
 <hr></hr>
