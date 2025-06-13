@@ -1,8 +1,6 @@
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/1236e4a2-5e9f-4a0e-b91f-526ca9b44c95" alt="banner_img"/> </p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=chrissch-dev&label=Profile%20views&color=0e75b6&style=flat" alt="chrissch-dev" /> </p>
-
 <h2 align="left">Hi 👋, I'm ChrisSch</h3>
 <p align="left">
 Hello! I am Chris, a self-taught back-end developer/software engineer from Hong Kong. Currently still in High School, and currently majors in Biology and Computer Science. I specialize in JS, TS, Kotlin and Rust!
