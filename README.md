@@ -40,16 +40,16 @@ As of recently, I have taken a step back in programming outside of work to try t
 
 ### 📊 GitHub Stats:
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChrisSch-dev&bg_color=1a1b27&color=6C63FF&line=628fdb&point=FFFFFF&area=true&hide_border=true" alt="GitHub Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChrisSch-dev&bg_color=1a1b27&color=6C63FF&line=628fdb&point=FFFFFF&area=true&hide_border=true&count_private=true" alt="GitHub Activity Graph" width="100%" />
 </div>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ChrisSch-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ChrisSch-dev&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ChrisSch-dev&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Streak Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&layout=compact" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
 </div>
 
 ---
