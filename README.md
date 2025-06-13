@@ -63,4 +63,19 @@ Hello! I am Chris, a self-taught back-end developer/software engineer from Hong 
 </div>
 ---
 
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=ChrisSch-dev&style=for-the-badge&color=6C63FF" alt="Profile Views" />
+</div>
+
+<div align="center">
+  <h3>💬 Let's create something amazing together!</h3>
+  <p>I'm always open to interesting projects and collaborations. Feel free to reach out!</p>
+  
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="25" height="25" /> 
+  <strong>Fun Fact:</strong> The code you write today will power someone's tomorrow!
+</div>
+
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
