@@ -62,6 +62,5 @@ Hello! I am Chris, a self-taught back-end developer/software engineer from Hong 
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&layout=compact" alt="Top Languages" />
 </div>
 ---
-[![](https://visitcount.itsvg.in/api?id=ChrisSch-dev&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
