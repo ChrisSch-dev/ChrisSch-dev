@@ -48,6 +48,10 @@ As of recently, I have taken a step back in programming outside of work to try t
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ChrisSch-dev&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Streak Stats" />
 </div>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&layout=compact&cache_seconds=0" alt="Top Languages" />
+</div>
+
 ---
 
 <div align="center">
