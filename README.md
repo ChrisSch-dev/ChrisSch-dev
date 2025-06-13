@@ -63,8 +63,6 @@ Hello! I am Chris, a self-taught back-end developer/software engineer from Hong 
 </div>
 ---
 
----
-
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=ChrisSch-dev&style=for-the-badge&color=6C63FF" alt="Profile Views" />
 </div>
