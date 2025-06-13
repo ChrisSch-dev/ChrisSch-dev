@@ -1,19 +1,14 @@
 
 <h1 align="left">Hi there 👋, I'm Chris Tsang!</h1> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
 <p align="left">
-Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
+A passionate self-taught back-end developer/software engineer from Hong Kong. I am a fast learner and  thrives on building engaging, feature-rich experiences and making solutions that makes a difference! 
+
+I've been programming for over 5 years and started with Javascript, however quickly switched off of it as my main language in favor of Rust and Kotlin, in hopes of pursuing an app-development journey. Nowadays I mostly stick with Rust/Kotlin due to work reasons, outside of work, I often play around with languages such as Javascript, Typescript and Python for my personal projects. Currently, I am learning C and C++ to expand my skill set.
+
+As of recently, I have taken a step back in programming outside of work to try to discover other fields outside of tech which I am interested in. However, threat-not, the tech industry will always have a special place in my heart!
 </p>
 
 <hr></hr>
-
-### 💫 About Me
-- Currently employed as a Software Engineer [Remote]
-
-- Specializes in Back-end Development 
-
-- Ask me about: Javascript, TypeScript, Kotlin, Rust, Python, Java
-
-- Currently learning: C and C++
 
 ### 🔭 Experiences
 - Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
