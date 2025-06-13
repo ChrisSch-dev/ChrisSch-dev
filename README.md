@@ -1,5 +1,5 @@
 
-<h align="left">Hi 👋, I'm ChrisSch</h> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
+<h1 align="left">Hi 👋, I'm ChrisSch</h1> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
 <p align="left">
 Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
 </p>
