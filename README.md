@@ -3,7 +3,7 @@
 
 <h2 align="left">Hi 👋, I'm ChrisSch</h3>
 <p align="left">
-Hello! I am Chris, a self-taught back-end developer/software engineer from Hong Kong. Currently still in High School, and currently majors in Biology and Computer Science. I specialize in JS, TS, Kotlin and Rust!
+Hello! I am Chris, a passionate self-taught back-end developer/software engineer from Hong Kong.
 
 </p>
 
