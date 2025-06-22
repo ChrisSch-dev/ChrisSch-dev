@@ -69,6 +69,7 @@ As of recently, I have taken a step back in programming outside of work to try t
   
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="25" height="25" /> 
   <strong>Fun Fact:</strong> The code you write today will power someone's tomorrow!
+  <small>Rust is Love 💖</small>
 </div>
 
 
