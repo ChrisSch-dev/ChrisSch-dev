@@ -23,7 +23,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 
 - Former Developer @ [Celendi](https://github.com/Celendi) (2021) [Remote]
 
-- Former Information and Communication Technology (ICT.) Department Supervisor @ TCOCIC KPC (2024) [On-site]
+- Former Information and Communication Technology (ICT.) Department Supervisor @ The Church of Christ in China, Kei Pun Church (2024) [On-site]
 
 - Former Maintainer/Contributor @ PrismaCord (2022) [Remote]
 
