@@ -12,7 +12,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 ### 🔭 Experiences
 - Former Lead Web Developer, System Administrator @ The Church of Christ in China, Kei Pun Church [Remote & On-site]
 
-- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
+- Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
 
 - Former Founder @ [Epoch Studio](https://github.com/EpochStudio/) [Remote]
 
