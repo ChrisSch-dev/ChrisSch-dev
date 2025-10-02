@@ -530,7 +530,7 @@ function Portfolio() {
                 <footer className="py-8 relative z-10">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <p className="text-muted-foreground">
-                            © 2025 Chris Tsang | Built with React, TypeScript, and Tailwind CSS | <a href="https://github.com/ChrisSch-dev/portfolio">Source Code</a>
+                            © 2025 Chris Tsang | Built with React, TypeScript, and Tailwind CSS | <a href="https://github.com/ChrisSch-dev/ChrisSch-dev#">Source Code</a>
                         </p>
                     </div>
                 </footer>
