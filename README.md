@@ -1,4 +1,4 @@
-<h1 align="left">Hi there 👋, I'm Chris Tsang!</h1> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
+<h1 align="left">Hi there 👋, I'm Chris Tsang!</h1>
 <p align="left">
 A passionate self-taught back-end developer/software engineer from Hong Kong. I am a fast learner and thrive on building engaging, feature-rich experiences and making solutions that makes a difference! 
 
