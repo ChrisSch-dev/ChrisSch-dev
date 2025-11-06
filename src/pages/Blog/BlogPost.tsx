@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -11,8 +11,12 @@ import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { githubService, type BlogPost } from '@/lib/github'
 import { formatDate } from '@/lib/formatDate'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type CodeProps = any
+// Type for React Markdown component props
+type MarkdownComponentProps = {
+    className?: string
+    children?: React.ReactNode
+    [key: string]: unknown
+}
 
 function BlogPostPage() {
     const [post, setPost] = useState<BlogPost | null>(null)
@@ -21,6 +25,52 @@ function BlogPostPage() {
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
     const { id } = useParams()
+
+    // Memoize markdown components to prevent recreating on every render
+    const markdownComponents = useMemo(() => ({
+        code({className, children, ...props}: MarkdownComponentProps) {
+            const match = /language-(\w+)/.exec(className || '')
+            const inline = !match
+            return !inline && match ? (
+                <SyntaxHighlighter
+                    style={tomorrow as Record<string, React.CSSProperties>}
+                    language={match[1]}
+                    PreTag="div"
+                    className="rounded-lg"
+                    {...props}
+                >
+                    {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
+            ) : (
+                <code className={className} {...props}>
+                    {children}
+                </code>
+            )
+        },
+        h1: ({children}: MarkdownComponentProps) => (
+            <h1 className="text-3xl font-bold mt-12 mb-6 first:mt-0">{children}</h1>
+        ),
+        h2: ({children}: MarkdownComponentProps) => (
+            <h2 className="text-2xl font-bold mt-10 mb-4">{children}</h2>
+        ),
+        h3: ({children}: MarkdownComponentProps) => (
+            <h3 className="text-xl font-bold mt-8 mb-3">{children}</h3>
+        ),
+        p: ({children}: MarkdownComponentProps) => (
+            <p className="mb-6 leading-relaxed">{children}</p>
+        ),
+        ul: ({children}: MarkdownComponentProps) => (
+            <ul className="mb-6 space-y-2">{children}</ul>
+        ),
+        ol: ({children}: MarkdownComponentProps) => (
+            <ol className="mb-6 space-y-2">{children}</ol>
+        ),
+        blockquote: ({children}: MarkdownComponentProps) => (
+            <blockquote className="border-l-4 border-blue-500 pl-6 my-6 italic text-muted-foreground">
+                {children}
+            </blockquote>
+        )
+    }), [])
 
     useEffect(() => {
         if (id) {
@@ -190,52 +240,7 @@ function BlogPostPage() {
                             <CardContent className="px-0">
                                 {/* Article content */}
                                 <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-p:leading-relaxed prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:pl-4 prose-blockquote:italic">
-                                    <ReactMarkdown
-                                        components={{
-                                            code({className, children, ...props}: CodeProps) {
-                                                const match = /language-(\w+)/.exec(className || '')
-                                                const inline = !match
-                                                return !inline && match ? (
-                                                    <SyntaxHighlighter
-                                                        style={tomorrow as Record<string, React.CSSProperties>}
-                                                        language={match[1]}
-                                                        PreTag="div"
-                                                        className="rounded-lg"
-                                                        {...props}
-                                                    >
-                                                        {String(children).replace(/\n$/, '')}
-                                                    </SyntaxHighlighter>
-                                                ) : (
-                                                    <code className={className} {...props}>
-                                                        {children}
-                                                    </code>
-                                                )
-                                            },
-                                            h1: ({children}) => (
-                                                <h1 className="text-3xl font-bold mt-12 mb-6 first:mt-0">{children}</h1>
-                                            ),
-                                            h2: ({children}) => (
-                                                <h2 className="text-2xl font-bold mt-10 mb-4">{children}</h2>
-                                            ),
-                                            h3: ({children}) => (
-                                                <h3 className="text-xl font-bold mt-8 mb-3">{children}</h3>
-                                            ),
-                                            p: ({children}) => (
-                                                <p className="mb-6 leading-relaxed">{children}</p>
-                                            ),
-                                            ul: ({children}) => (
-                                                <ul className="mb-6 space-y-2">{children}</ul>
-                                            ),
-                                            ol: ({children}) => (
-                                                <ol className="mb-6 space-y-2">{children}</ol>
-                                            ),
-                                            blockquote: ({children}) => (
-                                                <blockquote className="border-l-4 border-blue-500 pl-6 my-6 italic text-muted-foreground">
-                                                    {children}
-                                                </blockquote>
-                                            )
-                                        }}
-                                    >
+                                    <ReactMarkdown components={markdownComponents as never}>
                                         {post.content}
                                     </ReactMarkdown>
                                 </div>

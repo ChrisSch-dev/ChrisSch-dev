@@ -1,5 +1,5 @@
 import type React from 'react'
-import {useCallback, useEffect, useRef} from 'react'
+import {useCallback, useEffect, useRef, memo} from 'react'
 import './InteractiveBackground.css'
 
 interface Particle {
@@ -16,15 +16,19 @@ interface InteractiveBackgroundProps {
     darkMode: boolean
 }
 
-const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode}) => {
+// Constants for performance tuning
+const PARTICLE_COUNT = 60 // Reduced from 80 for better performance
+const CONNECTION_DISTANCE = 120
+const MOUSE_INFLUENCE_DISTANCE = 150
+const TARGET_FPS = 60
+const FRAME_INTERVAL = 1000 / TARGET_FPS
+
+const InteractiveBackgroundComponent: React.FC<InteractiveBackgroundProps> = ({darkMode}) => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const particlesRef = useRef<Particle[]>([])
     const mouseRef = useRef({x: 0, y: 0})
     const animationFrameRef = useRef<number>()
-
-    const PARTICLE_COUNT = 80
-    const CONNECTION_DISTANCE = 120
-    const MOUSE_INFLUENCE_DISTANCE = 150
+    const lastFrameTimeRef = useRef<number>(0)
 
     // Initialize particles
     const initParticles = useCallback(() => {
@@ -54,11 +58,24 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
         }
     }, [])
 
-    // Animation loop
-    const animate = useCallback(() => {
+    // Animation loop with FPS throttling
+    const animate = useCallback((currentTime: number) => {
         const canvas = canvasRef.current
         const ctx = canvas?.getContext('2d')
         if (!canvas || !ctx) return
+
+        // Initialize lastFrameTime on first frame
+        if (lastFrameTimeRef.current === 0) {
+            lastFrameTimeRef.current = currentTime
+        }
+
+        // Throttle to target FPS
+        const elapsed = currentTime - lastFrameTimeRef.current
+        if (elapsed < FRAME_INTERVAL) {
+            animationFrameRef.current = requestAnimationFrame(animate)
+            return
+        }
+        lastFrameTimeRef.current = currentTime - (elapsed % FRAME_INTERVAL)
 
         // Clear canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -67,7 +84,9 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
         const mouse = mouseRef.current
 
         // Update and draw particles
-        particles.forEach((particle, i) => {
+        for (let i = 0; i < particles.length; i++) {
+            const particle = particles[i]
+            
             // Update position
             particle.x += particle.vx
             particle.y += particle.vy
@@ -83,9 +102,11 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
             // Mouse interaction
             const dx = mouse.x - particle.x
             const dy = mouse.y - particle.y
-            const distance = Math.sqrt(dx * dx + dy * dy)
+            const distanceSquared = dx * dx + dy * dy
+            const influenceDistanceSquared = MOUSE_INFLUENCE_DISTANCE * MOUSE_INFLUENCE_DISTANCE
 
-            if (distance < MOUSE_INFLUENCE_DISTANCE) {
+            if (distanceSquared < influenceDistanceSquared) {
+                const distance = Math.sqrt(distanceSquared)
                 const force = (MOUSE_INFLUENCE_DISTANCE - distance) / MOUSE_INFLUENCE_DISTANCE
                 particle.vx += (dx / distance) * force * 0.01
                 particle.vy += (dy / distance) * force * 0.01
@@ -107,14 +128,16 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
             ctx.fillStyle = particleColor
             ctx.fill()
 
-            // Draw connections
+            // Draw connections (only check remaining particles to avoid duplicates)
             for (let j = i + 1; j < particles.length; j++) {
                 const otherParticle = particles[j]
                 const dx = particle.x - otherParticle.x
                 const dy = particle.y - otherParticle.y
-                const distance = Math.sqrt(dx * dx + dy * dy)
+                const distanceSquared = dx * dx + dy * dy
+                const connectionDistanceSquared = CONNECTION_DISTANCE * CONNECTION_DISTANCE
 
-                if (distance < CONNECTION_DISTANCE) {
+                if (distanceSquared < connectionDistanceSquared) {
+                    const distance = Math.sqrt(distanceSquared)
                     const baseOpacity = (CONNECTION_DISTANCE - distance) / CONNECTION_DISTANCE * 0.3
                     const opacity = darkMode ? baseOpacity : baseOpacity * 1.8 // Higher opacity for light mode
 
@@ -128,7 +151,7 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
                     ctx.stroke()
                 }
             }
-        })
+        }
 
         animationFrameRef.current = requestAnimationFrame(animate)
     }, [darkMode])
@@ -148,7 +171,7 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
         window.addEventListener('resize', resizeCanvas)
         window.addEventListener('mousemove', handleMouseMove)
 
-        animate()
+        animationFrameRef.current = requestAnimationFrame(animate)
 
         return () => {
             window.removeEventListener('resize', resizeCanvas)
@@ -171,5 +194,8 @@ const InteractiveBackground: React.FC<InteractiveBackgroundProps> = ({darkMode})
         />
     )
 }
+
+// Memoize to prevent unnecessary re-renders
+const InteractiveBackground = memo(InteractiveBackgroundComponent)
 
 export default InteractiveBackground

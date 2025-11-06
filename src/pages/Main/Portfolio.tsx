@@ -42,14 +42,16 @@ function Portfolio() {
             }
         )
 
-        if (aboutRef.current) {
-            observer.observe(aboutRef.current)
+        const currentRef = aboutRef.current
+        if (currentRef) {
+            observer.observe(currentRef)
         }
 
         return () => {
-            if (aboutRef.current) {
-                observer.unobserve(aboutRef.current)
+            if (currentRef) {
+                observer.unobserve(currentRef)
             }
+            observer.disconnect()
         }
     }, [terminalVisible])
 
@@ -160,6 +162,7 @@ function Portfolio() {
                                 src="/assets/christsang.jpg"
                                 alt="Chris Tsang Profile"
                                 className="w-32 h-32 mx-auto mb-8 rounded-full object-cover shadow-lg ring-4 ring-blue-500/20"
+                                loading="eager"
                             />
                             <h1 className="text-4xl md:text-6xl font-bold mb-6">
                                 Hello 👋, I'm <span className="text-blue-600 dark:text-blue-400">Chris Tsang</span>
@@ -326,6 +329,7 @@ function Portfolio() {
                                                             src={tech.icon}
                                                             alt={`${tech.name} icon`}
                                                             className="w-4 h-4"
+                                                            loading="lazy"
                                                             onError={(e) => {
                                                                 e.currentTarget.style.display = 'none'
                                                             }}
@@ -452,6 +456,7 @@ function Portfolio() {
                                                         src={testimonial.profilePicture}
                                                         alt={`${testimonial.name} profile`}
                                                         className="w-full h-full object-cover"
+                                                        loading="lazy"
                                                     />
                                                 ) : (
                                                     <div className="w-full h-full bg-blue-600 flex items-center justify-center text-white font-semibold">

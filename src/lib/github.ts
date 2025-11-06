@@ -88,7 +88,14 @@ class GitHubService {
         try {
             const data = await this.makeRequest(`/contents/${path}`)
             if (data.content && data.encoding === 'base64') {
-                return atob(data.content)
+                // Decode base64 properly handling Unicode characters
+                const base64 = data.content.replace(/\n/g, '')
+                const binaryString = atob(base64)
+                const bytes = new Uint8Array(binaryString.length)
+                for (let i = 0; i < binaryString.length; i++) {
+                    bytes[i] = binaryString.charCodeAt(i)
+                }
+                return new TextDecoder().decode(bytes)
             }
             throw new Error('File content not found')
         } catch (error) {
@@ -98,6 +105,15 @@ class GitHubService {
     }
 
     async createOrUpdateFile(path: string, content: string, message: string, sha?: string): Promise<void> {
+        // Encode content properly handling Unicode characters
+        const encoder = new TextEncoder()
+        const bytes = encoder.encode(content)
+        let binary = ''
+        for (let i = 0; i < bytes.length; i++) {
+            binary += String.fromCharCode(bytes[i])
+        }
+        const base64Content = btoa(binary)
+        
         const body: {
             message: string
             content: string
@@ -105,7 +121,7 @@ class GitHubService {
             sha?: string
         } = {
             message,
-            content: btoa(content),
+            content: base64Content,
             branch: this.branch,
         }
 
@@ -192,19 +208,19 @@ class GitHubService {
     async getAllPosts(): Promise<BlogPost[]> {
         try {
             const files = await this.getFiles()
-            const posts: BlogPost[] = []
-
-            for (const file of files) {
+            
+            // Fetch all files in parallel for better performance
+            const postPromises = files.map(async (file) => {
                 try {
                     const content = await this.getFile(file.name)
-                    const post = this.parseMarkdownPost(file.name, content)
-                    if (post) {
-                        posts.push(post)
-                    }
+                    return this.parseMarkdownPost(file.name, content)
                 } catch (error) {
                     console.error(`Error processing file ${file.name}:`, error)
+                    return null
                 }
-            }
+            })
+
+            const posts = (await Promise.all(postPromises)).filter((post): post is BlogPost => post !== null)
 
             // Sort by published date (newest first)
             return posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -15,8 +15,15 @@ import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { githubService, type BlogPost } from '@/lib/github'
 import { calculateReadTime } from "@/lib/calculateReadTime"
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type CodeProps = any
+// Type for React Markdown component props
+type MarkdownComponentProps = {
+    node?: unknown
+    inline?: boolean
+    className?: string
+    children?: React.ReactNode
+    href?: string
+    [key: string]: unknown
+}
 
 function BlogAdmin() {
     const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -40,6 +47,20 @@ function BlogAdmin() {
 
     const navigate = useNavigate()
 
+    const loadPosts = useCallback(async () => {
+        try {
+            setLoading(true)
+            setError(null)
+            const fetchedPosts = await githubService.getAllPosts()
+            setPosts(fetchedPosts)
+        } catch (err) {
+            setError(err instanceof Error ? err.message : 'Failed to load posts')
+            console.error('Error loading posts:', err)
+        } finally {
+            setLoading(false)
+        }
+    }, [])
+
     useEffect(() => {
         // Check if already authenticated
         const authStatus = sessionStorage.getItem('blogAdminAuth')
@@ -52,7 +73,7 @@ function BlogAdmin() {
         if (githubService.hasToken()) {
             setGithubToken('••••••••••••••••')
         }
-    }, [])
+    }, [loadPosts])
 
     useEffect(() => {
         if (darkMode) {
@@ -91,20 +112,6 @@ function BlogAdmin() {
             setSuccess('GitHub token saved successfully!')
             setTimeout(() => setSuccess(null), 3000)
             loadPosts()
-        }
-    }
-
-    const loadPosts = async () => {
-        try {
-            setLoading(true)
-            setError(null)
-            const fetchedPosts = await githubService.getAllPosts()
-            setPosts(fetchedPosts)
-        } catch (err) {
-            setError(err instanceof Error ? err.message : 'Failed to load posts')
-            console.error('Error loading posts:', err)
-        } finally {
-            setLoading(false)
         }
     }
 
@@ -502,7 +509,7 @@ function BlogAdmin() {
                                                     <ReactMarkdown
                                                         remarkPlugins={[remarkGfm]}
                                                         components={{
-                                                            code({node, inline, className, children, ...props}: CodeProps) {
+                                                            code({node, inline, className, children, ...props}: MarkdownComponentProps) {
                                                                 const match = /language-(\w+)/.exec(className || '')
                                                                 return !inline && match ? (
                                                                     <SyntaxHighlighter
@@ -520,22 +527,22 @@ function BlogAdmin() {
                                                                     </code>
                                                                 )
                                                             },
-                                                            h1: ({children}) => <h1 className="text-3xl font-bold mt-6 mb-4 text-foreground">{children}</h1>,
-                                                            h2: ({children}) => <h2 className="text-2xl font-semibold mt-5 mb-3 text-foreground">{children}</h2>,
-                                                            h3: ({children}) => <h3 className="text-xl font-medium mt-4 mb-2 text-foreground">{children}</h3>,
-                                                            h4: ({children}) => <h4 className="text-lg font-medium mt-3 mb-2 text-foreground">{children}</h4>,
-                                                            h5: ({children}) => <h5 className="text-base font-medium mt-2 mb-1 text-foreground">{children}</h5>,
-                                                            h6: ({children}) => <h6 className="text-sm font-medium mt-2 mb-1 text-foreground">{children}</h6>,
-                                                            p: ({children}) => <p className="mb-4 text-foreground leading-relaxed">{children}</p>,
-                                                            ul: ({children}) => <ul className="mb-4 ml-6 list-disc text-foreground">{children}</ul>,
-                                                            ol: ({children}) => <ol className="mb-4 ml-6 list-decimal text-foreground">{children}</ol>,
-                                                            li: ({children}) => <li className="mb-1 text-foreground">{children}</li>,
-                                                            blockquote: ({children}) => <blockquote className="border-l-4 border-muted-foreground pl-4 my-4 italic text-muted-foreground">{children}</blockquote>,
-                                                            a: ({children, href}) => <a href={href} className="text-blue-500 hover:text-blue-600 underline" target="_blank" rel="noopener noreferrer">{children}</a>,
-                                                            strong: ({children}) => <strong className="font-semibold text-foreground">{children}</strong>,
-                                                            em: ({children}) => <em className="italic text-foreground">{children}</em>,
+                                                            h1: ({children}: MarkdownComponentProps) => <h1 className="text-3xl font-bold mt-6 mb-4 text-foreground">{children}</h1>,
+                                                            h2: ({children}: MarkdownComponentProps) => <h2 className="text-2xl font-semibold mt-5 mb-3 text-foreground">{children}</h2>,
+                                                            h3: ({children}: MarkdownComponentProps) => <h3 className="text-xl font-medium mt-4 mb-2 text-foreground">{children}</h3>,
+                                                            h4: ({children}: MarkdownComponentProps) => <h4 className="text-lg font-medium mt-3 mb-2 text-foreground">{children}</h4>,
+                                                            h5: ({children}: MarkdownComponentProps) => <h5 className="text-base font-medium mt-2 mb-1 text-foreground">{children}</h5>,
+                                                            h6: ({children}: MarkdownComponentProps) => <h6 className="text-sm font-medium mt-2 mb-1 text-foreground">{children}</h6>,
+                                                            p: ({children}: MarkdownComponentProps) => <p className="mb-4 text-foreground leading-relaxed">{children}</p>,
+                                                            ul: ({children}: MarkdownComponentProps) => <ul className="mb-4 ml-6 list-disc text-foreground">{children}</ul>,
+                                                            ol: ({children}: MarkdownComponentProps) => <ol className="mb-4 ml-6 list-decimal text-foreground">{children}</ol>,
+                                                            li: ({children}: MarkdownComponentProps) => <li className="mb-1 text-foreground">{children}</li>,
+                                                            blockquote: ({children}: MarkdownComponentProps) => <blockquote className="border-l-4 border-muted-foreground pl-4 my-4 italic text-muted-foreground">{children}</blockquote>,
+                                                            a: ({children, href}: MarkdownComponentProps) => <a href={(href as string) || '#'} className="text-blue-500 hover:text-blue-600 underline" target="_blank" rel="noopener noreferrer">{children}</a>,
+                                                            strong: ({children}: MarkdownComponentProps) => <strong className="font-semibold text-foreground">{children}</strong>,
+                                                            em: ({children}: MarkdownComponentProps) => <em className="italic text-foreground">{children}</em>,
                                                             hr: () => <hr className="my-6 border-border" />,
-                                                        }}
+                                                        } as never}
                                                     >
                                                         {formData.content || 'Start writing your content...'}
                                                     </ReactMarkdown>
