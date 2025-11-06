@@ -1,4 +1,4 @@
-<h1 align="left">Hi there 👋, I'm Chris Tsang!</h1> <p> 𝙹𝚘𝚜𝚎𝚙𝚑𝚒𝚊𝚗 26’ </p>
+<h1 align="left">Hi there 👋, I'm Chris Tsang!</h1>
 <p align="left">
 A passionate self-taught back-end developer/software engineer from Hong Kong. I am a fast learner and thrive on building engaging, feature-rich experiences and making solutions that makes a difference! 
 
@@ -12,7 +12,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 ### 🔭 Experiences
 - Former Lead Web Developer, System Administrator @ The Church of Christ in China, Kei Pun Church [Remote & On-site]
 
-- Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
+- Former Lead-Developer, System Administrator @ [Epoch Studio - Galaxies Branch](https://github.com/EpochStudio/) (2024 June ~ 2025 May) [Remote]
 
 - Former Founder @ [Epoch Studio](https://github.com/EpochStudio/) [Remote]
 
@@ -28,7 +28,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 
 - Contributor @ [weky-npm - Discontinued](https://github.com/WekyDev/weky-npm), [Gamecord](https://github.com/aniket091/Gamecord) [Remote]
 
-- Freelancer (2020 ~ 2021), Over 300+ Commissions Received [Remote]
+- Freelancer (2020 ~ 2021, October 2025 ~ Present), Over 300+ Commissions Received [Remote]
 
 ### 🛠️ Skill Set
 
