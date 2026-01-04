@@ -5,6 +5,8 @@ A passionate self-taught back-end developer/software engineer from Hong Kong. I 
 I've been programming for over 5 years and started with Javascript, however quickly switched off of it as my main language in favor of Rust and Kotlin, in hopes of pursuing an app-development journey. Nowadays I mostly stick with Rust/Kotlin due to work reasons, outside of work, I often play around with languages such as Javascript, Typescript and Python for my personal projects. Currently, I am learning C and C++ to expand my skill set.
 
 As of recently, I have taken a step back in programming outside of work to try to discover other fields outside of tech which I am interested in. However, fret-not, the tech industry will always have a special place in my heart!
+
+\* \* \* Currently NOT doing commissions or accepting any job offers.
 </p>
 
 <hr></hr>
