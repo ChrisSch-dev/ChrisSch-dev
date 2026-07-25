@@ -6,7 +6,7 @@ I've been programming since 2020 and started with Javascript, however quickly sw
 
 As of recently, I have taken a step back in programming outside of work to try to discover other fields outside of tech which I am interested in. However, fret-not, the tech industry will always have a special place in my heart!
 
-\* \* \* Currently NOT doing commissions or accepting any job offers.
+\*\*\* Currently NOT doing commissions or accepting any job offers.
 </p>
 
 <hr></hr>
