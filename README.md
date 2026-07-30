@@ -52,11 +52,11 @@ As of recently, I have taken a step back in programming outside of work to try t
 </div>
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ChrisSch-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ChrisSch-dev&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800&version=2" alt="GitHub Stats" />
 </div>
 <div align="center">
 
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=0&langs_count=15" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=15&cache_seconds=1800&version=2" alt="Top Languages" />
 
 </div>
 
