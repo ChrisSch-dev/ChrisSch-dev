@@ -48,7 +48,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 
 ### 📊 GitHub Stats:
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/graph?username=ChrisSch-dev&bg_color=1a1b27&color=6C63FF&line=628fdb&point=FFFFFF&area=true&hide_border=true&count_private=true" alt="GitHub Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ChrisSch-dev&bg_color=1a1b27&color=6C63FF&line=628fdb&point=FFFFFF&area=true&hide_border=true&count_private=true" alt="GitHub Activity Graph" width="100%" />
 </div>
 
 <div align="center">
