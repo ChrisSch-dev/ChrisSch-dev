@@ -56,7 +56,7 @@ As of recently, I have taken a step back in programming outside of work to try t
 </div>
 <div align="center">
 
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=15&cache_seconds=1800&version=2" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ChrisSch-dev&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=12&cache_seconds=1800&version=2" alt="Top Languages" />
 
 </div>
 
